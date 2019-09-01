@@ -50,7 +50,7 @@
                 */
 
                 echo '<p>The main website that I use everyday is <a href="https://www.youtube.com/" target="_blank">YouTube.</a>  When I 
-                take a break from school or work, I find myself watching a short video.  I like to watch cooking videos, such as 
+                take a break from school or work, I find myself watching a short video online.  I like to watch cooking videos, such as 
                 <a href="https://www.youtube.com/watch?v=kS6YJJfBYag&list=PLKtIunYVkv_RwB_yx1SZrZC-ddhxyXanh" target="_blank">Gourmet Makes</a>.  
                 I also like to watch science experiments made by 
                 <a href="https://www.youtube.com/channel/UCY1kMZp36IQSyNx_9h4mpCg" target="_blank">Mark Rober.</a></p>';
