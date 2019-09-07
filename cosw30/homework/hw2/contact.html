@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Political Campaign Supporter Form</title>
+        
+        <style>
+            body {
+                background-image: url("https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+                background-color: #E0E0E0;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                text-align: center;
+            }
+            
+            form {
+                background-color: #F8F8F8;
+                opacity: 0.75;
+                margin: 1em 25em;
+                padding-top: 1em;
+            }
+            
+            #form-text {
+                font-weight: bold;
+                color: #000;
+            }
+            
+            #special {
+                color: red;
+                font-weight: bold;
+            }
+            
+        </style>
+    
+    </head>
+    
+    
+    
+    <body>
+        
+            
+        <form action="process_contact.php" method="POST">
+            <div id="form-text">
+            <h1>Jon Snow</h1>
+            <h2>"King of the North"</h2>
+            
+            <br><br>    
+                
+            <label for="fname">*First Name: 
+            <input type="text" id="fname" name="fname" required></label>
+            
+            <br><br>
+            
+            <label for="lname">*Last Name: 
+            <input type="text" id="lname" name="lname" required></label>
+            
+            <br><br>
+            
+            <label for="email">*Email Address: 
+            <input type="email" id="email" name="email" placeholder="example@example.com" required></label>
+            
+            <br><br>
+            
+            <p>*Please select a gender option</p>
+            
+            <select name="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="none">Prefer Not to Say</option>
+            </select>
+            
+            <br><br>
+            
+            <p>*Please select your age range</p>
+            
+            <label><input type="radio" name="age" value="18-25" required>18-25</label><br>
+            <label><input type="radio" name="age" value="26-35">26-35</label><br>
+            <label><input type="radio" name="age" value="36-50">36-50</label><br>
+            <label><input type="radio" name="age" value="51-70">51-70</label><br>
+            <label><input type="radio" name="age" value="70+">70+</label>
+            
+            
+            <br><br>
+            
+            <p>Please select any interests from the following list:</p>
+            <label><input type="checkbox" name="interest1" value="opt1">Sword Fighting/Training </label><br>
+            <label><input type="checkbox" name="interest2" value="opt2">Praying in the godswood </label><br>
+            <label><input type="checkbox" name="interest3" value="opt3">Fighting the Nightwalkers</label><br>
+            <label><input type="checkbox" name="interest4" value="opt4">Playing with Direwolves</label><br>
+            <label><input type="checkbox" name="interest5" value="opt5">Riding dragons</label><br>
+            <label><input type="checkbox" name="interest6" value="opt6">Listening to Old Nan's stories</label><br>
+            
+            <br><br>
+            
+            Contribution Amount ($): <input type="number" name="donation" value="0"><br>
+            
+            <br><br>
+            
+            <!--Yes if checked. No if not checked -->
+            <label><input type="checkbox" name="mail_list" value="mail_list" checked>
+            Sign up for our exclusive mailing list!</label>
+            
+            <br><br>
+            
+            <textarea rows="10" cols="50" name="comments" placeholder="Max 500 characters" maxlength="500"></textarea>
+            
+            <br><br>
+            
+            <input type="submit">
+            
+            <br><br>
+            
+            <p id="special">* indicates a required field</p>
+            
+            <br>
+            
+        </div>        
+        </form>
+    
+    </body>
+</html>
