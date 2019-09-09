@@ -63,48 +63,58 @@
             
             <br><br>
             
-            <p>*Please select a gender option</p>
-            
-            <select name="gender" required>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="none">Prefer Not to Say</option>
-            </select>
-            
-            <br><br>
-            
-            <p>*Please select your age range</p>
-            
-            <label><input type="radio" name="age" value="18-25" required>18-25</label><br>
-            <label><input type="radio" name="age" value="26-35">26-35</label><br>
-            <label><input type="radio" name="age" value="36-50">36-50</label><br>
-            <label><input type="radio" name="age" value="51-70">51-70</label><br>
-            <label><input type="radio" name="age" value="70+">70+</label>
-            
+            <div>
+                <label for="gender">*Please select a gender option
+                    <select name="gender" required>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="none">Prefer Not to Say</option>
+                        </label>
+                    </select>
+            </div>
             
             <br><br>
             
-            <p>Please select any interests from the following list:</p>
+            <div>
+                <label for="age">*Please select your age range <br>
+                <label><input type="radio" name="age" value="18-25" required>18-25</label><br>
+                <label><input type="radio" name="age" value="26-35">26-35</label><br>
+                <label><input type="radio" name="age" value="36-50">36-50</label><br>
+                <label><input type="radio" name="age" value="51-70">51-70</label><br>
+                <label><input type="radio" name="age" value="70+">70+</label>
+                </label>
+            </div>
+            
+            <br><br>
+            
+            <div>
+            <label for="interest">Please select any interests from the following list:<br>
             <label><input type="checkbox" name="interest1" value="opt1">Sword Fighting/Training </label><br>
-            <label><input type="checkbox" name="interest2" value="opt2">Praying in the godswood </label><br>
+            <label><input type="checkbox" name="interest2" value="opt2">Praying in the godswoods </label><br>
             <label><input type="checkbox" name="interest3" value="opt3">Fighting the Nightwalkers</label><br>
             <label><input type="checkbox" name="interest4" value="opt4">Playing with Direwolves</label><br>
             <label><input type="checkbox" name="interest5" value="opt5">Riding dragons</label><br>
             <label><input type="checkbox" name="interest6" value="opt6">Listening to Old Nan's stories</label><br>
+            </label>
+            </div>
             
             <br><br>
             
-            Contribution Amount ($): <input type="number" name="donation" value="0"><br>
+            <label for="donation">
+                Contribution Amount ($): <input type="number" name="donation" value="0" min="0"><br>
+            </label>
             
             <br><br>
             
             <!--Yes if checked. No if not checked -->
-            <label><input type="checkbox" name="mail_list" value="mail_list" checked>
+            <label for="mailing list"><input type="checkbox" name="mail_list" value="mail_list" checked>
             Sign up for our exclusive mailing list!</label>
             
             <br><br>
             
-            <textarea rows="10" cols="50" name="comments" placeholder="Max 500 characters" maxlength="500"></textarea>
+            <label for="comments">Leave a Comment: <br>
+                <textarea rows="10" cols="50" name="comments" placeholder="Max 500 characters" maxlength="500"></textarea>
+            </label>
             
             <br><br>
             

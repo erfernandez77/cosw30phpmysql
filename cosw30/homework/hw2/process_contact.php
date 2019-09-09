@@ -44,7 +44,7 @@
         echo '<a href="contact.html">Go Back</a>';
     } else {
         //All required fields were not empty
-         echo "<h1>Thank you $fname $lname for supporting Jon Snow!</h1>";
+         echo "<h1>Thank you $fname for supporting Jon Snow!</h1>";
             
             echo "<p>Your Information: </p>";
             echo "<p>First Name: $fname</p>";
@@ -60,7 +60,7 @@
                 }
                 if (isset($interest2)) {
                     //$interest2 = "Praying in the godswood ";
-                    echo "<p>Praying in the godswood </p>";
+                    echo "<p>Praying in the godswoods </p>";
                 } 
                 if (isset($interest3)) {
                     //$interest3 = "Fighting the Nightwalkers";
