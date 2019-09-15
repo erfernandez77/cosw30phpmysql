@@ -1,0 +1,111 @@
+<!--
+Elisa Fernandez 
+09/14/2019
+COSW 30 - 72223
+Tuition Calculator Assignment
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LBCC Tuition Calculator</title>
+        
+        <style>
+            #form {
+                width: 25em;
+                margin: 2em auto;
+            }
+            
+            .center {
+                text-align: center;
+            }
+            
+            
+            #subBtn {
+                margin-top: 3em;
+            }
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        <div id="form">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdrSK2iYfcrCIwbRE1SIg-4yvW_lFquzfHmDt8yALk_LTL44QQ" alt="LBCC logo">
+            
+            <h1>LBCC Tuition Calculator</h1>
+            
+            <form action="process_tuition.php" method="POST">
+                
+                <h3>Use this form to calculate total cost of tuition</h3>
+                
+                
+                <label>Are you currently a resident of California?
+                    <select name="resident" required>
+                        <option value="46">Resident</option>
+                        <option value="265">Non-resident</option>
+                    </select>
+                </label>    
+                
+                <br><br>
+                
+                <label>Select Number of Units
+                    <select id="unitOpt" name="units" size="1" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                    </select>
+                </label>
+                
+                <br>
+                
+                <p class="center"><strong>Please note there is a mandatory Student Health Fee of $20 for all registered students.</strong></p>
+                
+                <br>
+                
+                <p><strong>Optional Fees Below:</strong></p>
+                
+                <label> College Services Card ($20):
+                    <select name="services">
+                        <option value="0">No</option>
+                        <option value="20">Yes</option>
+                    </select>
+                </label>  
+                
+                <br><br>
+                
+                <label> Parking Permit ($30):
+                    <select name="parking">
+                        <option value="0">No</option>
+                        <option value="30">Yes</option>
+                    </select>
+                </label>
+                
+                <br>
+                
+                <input id="subBtn" type="submit">
+                
+                
+            </form>
+        </div>
+     </body>
+</html>
