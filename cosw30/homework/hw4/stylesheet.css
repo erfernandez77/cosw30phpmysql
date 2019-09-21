@@ -1,0 +1,72 @@
+body {
+    background-color: #003366;
+    text-align: center;
+}
+
+fieldset {
+    position: absolute;
+    margin: auto;
+    padding: 1em;
+    width: 25em;
+    height: 17em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #99CC99;
+    border: 0.5em solid white;
+    border-radius: 1em;
+    box-shadow: 2em 2em 2em #000;
+}
+
+.greenBkgd {
+    background-color: #99CC99;
+    border: 0.5em solid white;
+    border-radius: 1em;
+    color: #000;
+    width: 30em;
+    margin: auto;
+    padding: 1em;
+    box-shadow: 2em 2em 2em #000;
+}
+
+footer {
+    position: absolute;
+    bottom: 5em;
+    height: 1em;  
+    right: 0;
+    left: 0;
+}
+
+
+#popLink a, a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+button {
+    background-color: #993300;
+    border: 0.2em solid white;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    color: #FFF;
+    font-weight: bold;
+}
+
+#headingUnder {
+    text-decoration: underline double;
+    margin-bottom: 1em;
+}
+
+.underlineText {
+    text-decoration: underline;
+}
+
+
+.tableHeadings {
+    margin: 1em;
+}
+
+.popTable {
+    margin: auto;
+}
