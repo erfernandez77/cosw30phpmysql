@@ -21,6 +21,9 @@
                 if(isset($error_confirmpassword)) {
                     echo "<p class=\"error\">$error_confirmpassword</p>";
                 }
+                if(isset($error_pswds)) {
+                    echo "<p class=\"error\">$error_pswds</p>";
+                }
                 if(isset($congrats)) {
                    echo "<p><strong>$congrats</strong></p>";
                 }
