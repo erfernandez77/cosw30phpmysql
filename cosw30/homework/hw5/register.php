@@ -26,6 +26,10 @@
                 }
                 if(isset($congrats)) {
                    echo "<p><strong>$congrats</strong></p>";
+                   echo "<p><strong>First Name: $first_name</strong></p>";
+                   echo "<p><strong>Last Name: $last_name</strong></p>";
+                   echo "<p><strong>Email: $email</strong></p>";
+                   echo "<p><strong>Password: $password</strong></p>";
                 }
           ?>
         <form action="register.php" method="POST">

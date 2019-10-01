@@ -1,4 +1,6 @@
 <?php include('includes/header.php'); ?>
+<?php include('includes/inc_login.php'); ?>
+
 <?php
     $email = "";
     $password = "";
