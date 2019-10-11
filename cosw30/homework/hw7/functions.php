@@ -5,9 +5,10 @@
     $firstNum = $_POST['firstNum'];
     $secondNum = $_POST['secondNum'];
     
-    function outputDis($firstNum, $secondNum){
+    function outputDis($firstNum, $secondNum, $choice){
         echo "<p>First Number: $firstNum</p>";
         echo "<p>Second Number: $secondNum</p>";
+        echo "<p>Operator: $choice</p>";
     }
     
     function multiply($firstNum, $secondNum) {
@@ -60,7 +61,7 @@
             
             <label>Choose an operator: 
                 <select name="choice" required>
-                    <option diable value="none">-Select Option-</option>
+                    <option selected="true" disabled="disabled">-Select Option-</option>
                     <option value="Multiplication">Multiplication</option>
                     <option value="Addition">Addition</option>
                     <option value="Subtraction">Subtraction</option>
@@ -81,30 +82,30 @@
             
             
             
-            if($choice == "none") {
-                echo "<h3 class=\"warning\">**WARNING! No operator selected. Please try again!</h3>";
+            if(!isset($choice)) {
+                echo "<h3 class=\"warning\">**WARNING! No operator selected. Please try again.</h3>";
             }
             
             elseif ($choice == "Multiplication") {
-                echo outputDis($firstNum, $secondNum);
+                echo outputDis($firstNum, $secondNum, $choice);
                 $total =  multiply($firstNum, $secondNum);
                 echo "<h3 class=\"output\">$firstNum * $secondNum = $total</h3>";
             }
             
             elseif ($choice == "Addition") {
-                echo outputDis($firstNum, $secondNum);
+                echo outputDis($firstNum, $secondNum, $choice);
                 $total =  add($firstNum, $secondNum);
                 echo "<h3 class=\"output\">$firstNum + $secondNum = $total</h3>";
             }
             
             elseif ($choice == "Subtraction") {
-                echo outputDis($firstNum, $secondNum);
+                echo outputDis($firstNum, $secondNum, $choice);
                 $total =  subtract($firstNum, $secondNum);
                 echo "<h3 class=\"output\">$firstNum - $secondNum = $total</h3>";
             }
             
             elseif ($choice == "Division") {
-                echo outputDis($firstNum, $secondNum);
+                echo outputDis($firstNum, $secondNum, $choice);
                 $total =  divide($firstNum, $secondNum);
                 echo "<h3 class=\"output\">$firstNum / $secondNum = $total</h3>";
             }
