@@ -1,0 +1,77 @@
+html {
+    background-image: url("https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #000;
+    height: 100%;
+    
+}
+
+/*
+body {
+    text-align: center; 
+}
+
+
+
+    font-family: 'Grenze', serif;
+
+    font-family: 'Lato', sans-serif;
+    font-family: 'Josefin Slab', serif;
+
+
+*/
+
+body {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 900;
+}
+
+.output {
+    font-family: 'Grenze', serif;
+    font-size: 2em;
+}
+
+#form-container {
+    position: absolute;
+    margin: auto;
+    padding: 1em;
+    width: 25em;
+    height: 25em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 0.5em solid white;
+    border-radius: 1em;
+    box-shadow: 2em 2em 2em #000;
+    text-align: center;
+    background-color: #F8F8F8;
+    opacity: 0.8;
+    
+}
+
+.warning {
+    color: red;
+    
+}
+
+.btn {
+    background-color: #000;
+    border: 0.2em solid white;
+    border-radius: 0.5em;
+    padding: 0.3em;
+    margin: 0.5em;
+    color: #FFF;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1em; 
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+
