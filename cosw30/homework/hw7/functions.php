@@ -61,7 +61,6 @@
             
             <label>Choose an operator: 
                 <select name="choice" required>
-                    <option selected="true" disabled="disabled">-Select Option-</option>
                     <option value="Multiplication">Multiplication</option>
                     <option value="Addition">Addition</option>
                     <option value="Subtraction">Subtraction</option>
@@ -80,13 +79,7 @@
         
         <?php 
             
-            
-            
-            if(!isset($choice)) {
-                echo "<h3 class=\"warning\">**WARNING! No operator selected. Please try again.</h3>";
-            }
-            
-            elseif ($choice == "Multiplication") {
+            if ($choice == "Multiplication") {
                 echo outputDis($firstNum, $secondNum, $choice);
                 $total =  multiply($firstNum, $secondNum);
                 echo "<h3 class=\"output\">$firstNum * $secondNum = $total</h3>";
