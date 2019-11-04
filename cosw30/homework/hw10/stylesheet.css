@@ -1,0 +1,121 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    background-image: url('https://images.pexels.com/photos/264771/pexels-photo-264771.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+    background-color: #FFCC33; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h1, h2 {
+    font-family: 'Cutive', serif;
+}
+
+#spTitle {
+    font-family: 'Fruktur', cursive;
+    font-size: 1.2em;
+}
+
+#formOuter {
+    border: 0.5em double #000;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #FCF1D1;
+    opacity: 0.85;
+}
+
+form {
+    border: 0.5em double #000;
+    width: 90%;
+    margin: 2% auto 0;
+    background-color: #E8EFF3;
+}
+
+.labels, .txtFields {
+    display: inline-block;
+    padding: 0.3em;
+}
+
+.labels {
+    text-align: right;
+    width: 20%;
+}
+
+.txtFields {
+    text-align: left;
+    width: 20%;
+}
+
+input {
+    border-radius: 0.3em;
+    box-shadow: 0.1em 0.1em 0.2em #000;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-decoration: underline;
+    background-color: #FCF1D1;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.success {
+    color: #5B7444;
+    font-weight: 700;
+    font-size: 1.3em;
+    text-decoration: underline;
+    background-color: #FCF1D1;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.regBtn {
+    background-color: red;
+    color: #FFF;
+    padding: 0.5em 0.8em;
+    border-radius: 0.7em;
+    border-color: red;
+    margin: 0.5em auto;
+    box-shadow: 0.1em 0.1em 0.2em #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+
+table {
+    margin: 0 auto;
+    width: 80%;
+    opacity: 1;
+    box-shadow: 0.2em 0.2em 0.2em #000;
+}
+
+th {
+    background-color: #4CAF50;
+    color: #FFF;
+    text-align: center;
+}
+
+tr {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #A3C586;
+    color: #000;
+}
+
+tr:hover {
+    background-color: #4CAF50;
+    color: #FFF;
+}
