@@ -175,17 +175,21 @@ if($resultDb) {
                         <?php
                             foreach($rows as $row) {
                                 echo '<tr>
-                                    <td>'.$row['first_name'].'</td>
-                                    <td>'.$row['last_name'].'</td>
-                                    <td>'.$row['email'].'</td>
-                                    <td>'.$row['password'].'</td>
+                                        <td>'.$row['first_name'].'</td>
+                                        <td>'.$row['last_name'].'</td>
+                                        <td>'.$row['email'].'</td>
+                                        <td>'.$row['password'].'</td>
                                     
-                                    <td class="edCol"><a href="update.php?id='.$row['user_id'].'">Edit</a></td>
+                                        <td class="edCol"><a class="editLink" href="update.php?id='.$row['user_id'].'">Edit</a></td>
                         
-                                    <td class="delCol"><form action="crud.php" method="POST">
-                                        <input type="hidden" name="user_id" value="'.$row['user_id'].'"/>
-                                        <input type="hidden" name="deleteName" value="deleteValue"/>
-                                        <button class="delBtn"><i class="far fa-trash-alt delIcon"></i>Delete</button></form></td>
+                                        <td class="delCol">
+                                            <form action="crud.php" method="POST">
+                                                <input type="hidden" name="user_id" value="'.$row['user_id'].'"/>
+                                                <input type="hidden" name="deleteName" value="deleteValue"/>
+                                                <button class="delBtn" onmouseover="modalDisplay()" onmouseout="modalHide()">
+                                                    <i class="far fa-trash-alt delIcon"></i>Delete</button>
+                                            </form>
+                                        </td>
                                     </tr>';
                             }
                         ?>
@@ -197,11 +201,32 @@ if($resultDb) {
                     </tbody>
                 </table>
             </fieldset>
+            
+            <div id="modalOuterBox" class="modalDiv">
+                <div id="modalContent" class="modalNote">
+                    <p class="error">WARNING!</p>
+                    <p>Are you sure you want to delete this user?</p>
+                    <p>User will be <span id="warnSpan">permanently</span> deleted!</p>
+                    <p>Click 'Delete' button to continue</p>
+                </div>
+            </div>
     
         </div>
         <footer>
             <p>&copy; Elisa Fernandez Long Beach, CA 2019</p>
         </footer>
     </div>
+    
+    <script>
+        var modalOuterDiv = document.getElementById("modalOuterBox");
+        var modalOutput = document.getElementById("modalContent");
+        function modalDisplay() {
+            modalOuterDiv.style.display = "block";
+        }
+        
+        function modalHide() {
+            modalOuterDiv.style.display = "none";
+        }
+    </script>
 </body>
 </html>

@@ -140,6 +140,17 @@ tr:hover {
     padding-right: 1em;
 }
 
+.editLink {
+    background-color: #5B7444;
+    color: #FFF;
+    padding: 0.2em 0.5em;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em 0.2em #000;
+    text-decoration: none;
+    font-size: 0.8em;
+    text-align: center;
+}
+
 .delCol {
     padding-right: 1em;
     text-align: center;
@@ -200,5 +211,30 @@ footer {
 }
 
 
+/*  THE MODAL WINDOW  */
+.modalDiv {
+  display: none;
+  position: fixed;
+  padding: 1em;
+  left: 0;
+  top: 0;
+  overflow: auto;
+  background-color: #767676;
+  opacity: 0.9;
+}
 
+
+.modalNote {
+  background-color: #E8EFF3;
+  margin: auto;
+  padding: 2em;
+  width: 80%;
+  color: #5B7444;
+  opacity: 1;
+}
+
+#warnSpan {
+    text-transform: uppercase;
+    color: red;
+}
 
