@@ -78,7 +78,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
 </div>
 
-<?php print_r($_SESSION); ?>
+<!--<?php print_r($_SESSION); ?>-->
 
 </main>
 
